@@ -13,10 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
 
-    - name: make
+    - name: Build
       run: make
 
     - name: Upload a Build Artifact
