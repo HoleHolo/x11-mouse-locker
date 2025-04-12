@@ -7,7 +7,7 @@ LDFLAGS=-lX11 -lXfixes
 all: mouse_locker
 
 mouse_locker: main.cpp
-	$(CPP) $(CPPFLAGS) $(LDFLAGS) main.cpp -o mouse_locker
+	$(CPP) $(CPPFLAGS) main.cpp $(LDFLAGS) -o mouse_locker
 
 .PHONY: clean
 clean:
