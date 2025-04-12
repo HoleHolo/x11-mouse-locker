@@ -352,14 +352,8 @@ int main(int argc, char *argv[])
         }
         else if (!locking && locked == true)
         {
-            if (!special)
-            {
-                unlockWindow(display, focused);
-            }
-            else
-            {
-                unlockWindow2(display);
-            }
+            unlockWindow(display, focused);
+            unlockWindow2(display);
             locked = !locked;
         }
     }
